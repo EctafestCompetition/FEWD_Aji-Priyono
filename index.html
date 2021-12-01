@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <!-- <link rel="stylesheet"  href="nav.css"/> -->
+    <link rel="stylesheet"  href="style.css"/>
+    <link rel="stylesheet" href="styleSlide.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="script.js"></script> 
+    <script>
+    	 $(document).ready(function() {
+			
+            $('#image-gallery').lightSlider({
+                // gallery:true,
+                item:2,
+                thumbItem:2,
+                slideMargin: 0,
+                speed:50,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+		});
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="nav/about.html">About</a></li>
+                    <li><a href="nav/produk.html">Produk</a></li>
+                    <li><a href="nav/panduan.html">Panduan</a></li>
+                </ul>
+
+                <div class="btn-login">
+                    <button type="submit">LOGIN</button>
+                    <a href="">Register</a>
+                </div>
+            </div>
+            
+        </header>
+        <section>
+            <div class="fiture">
+                <div class="title">
+                    <h1>Fitured</h1>
+                </div>
+                <div class="content-fiture">
+                    <div class="about">
+                        <div class="cirle">
+                            <div class="title">
+                                <h1>About</h1>
+                            </div>
+                            <div class="place-content">
+                                <p>Pengenalan Diri
+                                informasi website
+                                </p>
+                                <a href="nav/about.html">Klik Disini</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produk">
+                        <div class="cirle">
+                            <div class="title">
+                                <h1>Produk</h1>
+                            </div>
+                            <div class="place-content">
+                                <p>jenis layanan UMKM</p>
+                                <a href="">Klik Disini</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-out">
+                        <div class="cirle">
+                            <div class="title">
+                                <h1>Check</h1>
+                                <h1>Out</h1>
+                            </div>
+                            <div class="place-content">
+                                <p>cara mendaftarkan diri ke layanan UMKM</p>
+                                <a href="">Klik Disini</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="xx-content">
+                <p>
+                    UMKM (Usaha Mikro, Kecil dan Menengah) adalah usaha perdagangan yang dikelola oleh badan usaha atau perorangan yang merujuk pada usaha ekonomi produktif sesuai dengan kriteria yang ditetapkan oleh Undang - undang Nomor 20 Tahun 2008
+                </p>
+                <p>
+                    UMKM dikategorikan sebagai usaha kecil, sedangkan usaha yang tidak masuk sebagai UMKM dikategorikan sebagai usaha besar, contohnya usaha nasional milik negara atau swasta, usaha patungan, dan usaha asing yang melakukan kegiatan ekonomi di Indonesia.
+                </p>
+            </div>
+
+            <div class="slide-img">
+                <div class="demo">
+                    <div class="item">            
+                        <div class="clearfix">
+                            <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                                <li> 
+                                    <img src="img/cS-1.jpeg" />
+                                     </li>
+                                <li> 
+                                    <img src="img/cS-2.jpeg" />
+                                     </li>
+                                <li> 
+                                    <img src="img/cS-3.jpeg" />
+                                     </li>
+                                <li> 
+                                    <img src="img/cS-4.jpeg" />
+                                     </li>
+                                <li> 
+                                    <img src="img/cS-5.jpeg" />
+                                     </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+            
+                </div>
+            </div>
+
+        
+        </section>
+        
+        <footer>
+            <p>Creaty By : Aji Priyono</p>
+        </footer>
+        	
+    </div>
+	
+</body>

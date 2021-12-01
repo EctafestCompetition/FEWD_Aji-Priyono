@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --border: 1px solid black;
+}
+
+body {
+    background-color: #D0D3D4;
+}
+/* container */
+
+
+.container header .navigation {
+    display: flex;
+    flex-direction: row;
+    background-color: #3498DB ;
+    /* border: var(--border); */
+}
+
+.container header .navigation ul {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: #3498DB ;
+    /* border: var(--border); */
+}
+
+.container header .btn-login {
+    flex: 1;
+    /* border: 1px solid red; */
+}
+
+.container header .btn-login a {
+    text-decoration: none;
+    display: block;
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: .4em;
+}
+
+
+.container header .btn-login button {
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: .4em;
+}
+
+.container header .navigation ul li {
+    list-style: none;
+    /* padding: 10px; */
+    position: relative;
+    /* border: var(--border); */
+    width: 130px;
+    height: 50px;
+    /* margin: auto; */
+    /* line-height: 20px; */
+}
+
+.container header .navigation ul li:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 9px solid #fff;
+    transform: rotate(180deg);
+}
+
+
+
+/* .container header .navigation ul li:active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 9px solid red;
+    transform: rotate(180deg);
+} */
+
+
+.container header .navigation ul li a {
+    display: block;
+    text-align: center;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+
+
+
+/* nav produk */
+
+
+.container-produk header .navigation {
+    display: flex;
+    flex-direction: row;
+    background-color: #3498DB ;
+}
+
+
+.container-produk header .navigation ul {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: #3498DB;
+    /* border: var(--border); */
+}
+
+.container-produk header .btn-login {
+    flex: 1;
+    /* border: 1px solid red; */
+}
+
+.container-produk header .btn-login a {
+    text-decoration: none;
+    display: block;
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: .4em;
+}
+
+.container-produk header .btn-login button {
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: .4em;
+}
+
+
+.container-produk header .navigation ul li {
+    list-style: none;
+    /* padding: 10px; */
+    position: relative;
+    /* border: var(--border); */
+    width: 130px;
+    height: 50px;
+    /* margin: auto; */
+    /* line-height: 20px; */
+}
+
+.container-produk header .navigation ul li:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 9px solid #fff;
+    transform: rotate(180deg);
+}
+
+
+
+/* .container-produk header .navigation ul li:active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 9px solid red;
+    transform: rotate(180deg);
+} */
+
+
+.container-produk header .navigation ul li a {
+    display: block;
+    text-align: center;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+
+
+/* set responsive */
+
+@media screen and (max-width: 1280px) {
+    .container {
+        width: 80%;
+        height: 250vh;
+        background-color: #fff;
+        margin: auto;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-produk {
+        width: 80%;
+        height: 250vh;
+        background-color: #fff;
+        margin: auto;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .demo ul li img {
+        width: 300px;
+        height: 250px;
+        /* border: 1px solid yellow; */
+        margin-left: 10%;
+        margin-top: 10%;
+        z-index: 2;
+        /* position: relative; */
+    }
+
+    .container section .fiture .title h1 {
+        text-align: center;
+        font-size: 26px;
+        line-height: 60px;
+        font-family: sans-serif;
+    }
+
+    .container-produk section .fiture .title h1 {
+        text-align: center;
+        font-size: 26px;
+        line-height: 60px;
+        font-family: sans-serif;
+    }
+
+    section .xx-content p {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 20px;
+        padding: 23px;
+    }
+
+    footer p {
+        text-align: center;
+        line-height: 100px;
+        color: #D0D3D4;
+        font-size: 15px;
+    }
+
+    .container header .navigation ul li a {
+        display: block;
+        text-align: center;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        line-height: 50px;
+    }
+
+    
+    .container-produk header .navigation ul li a {
+        display: block;
+        text-align: center;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        line-height: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 1080px) {
+    .container {
+        width: 90%;
+        height: 250vh;
+        background-color: #fff;
+        margin: auto;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-produk {
+        width: 90%;
+        height: 250vh;
+        background-color: #fff;
+        margin: auto;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .demo ul li img {
+        width: 300px;
+        height: 250px;
+        /* border: 1px solid yellow; */
+        margin-left: 10%;
+        margin-top: 10%;
+        z-index: 2;
+        /* position: relative; */
+    }
+
+    .container section .fiture .title h1 {
+        text-align: center;
+        font-size: 26px;
+        line-height: 60px;
+        font-family: sans-serif;
+    }
+
+    
+    .container-produk section .fiture .title h1 {
+        text-align: center;
+        font-size: 26px;
+        line-height: 60px;
+        font-family: sans-serif;
+    }
+
+    section .xx-content p {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 20px;
+        padding: 23px;
+    }
+
+    footer p {
+        text-align: center;
+        line-height: 100px;
+        color: #D0D3D4;
+        font-size: 15px;
+    }
+
+    .container header .navigation ul li a {
+        display: block;
+        text-align: center;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 17px;
+        line-height: 50px;
+    }
+
+    .container-produk header .navigation ul li a {
+        display: block;
+        text-align: center;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 17px;
+        line-height: 50px;
+    }
+}
